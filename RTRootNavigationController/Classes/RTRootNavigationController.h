@@ -29,6 +29,7 @@
 
 @interface RTContainerController : UIViewController
 @property (nonatomic, readonly, strong) __kindof UIViewController *contentViewController;
+- (instancetype)initWithController:(UIViewController *)controller;
 @end
 
 
