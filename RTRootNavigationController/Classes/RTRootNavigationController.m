@@ -389,7 +389,7 @@ __attribute((overloadable)) static inline UIViewController *RTSafeWrapViewContro
                                                  forBarMetrics:UIBarMetricsDefault];
         
         self.navigationBar.titleTextAttributes              = self.navigationController.navigationBar.titleTextAttributes;
-        self.navigationBar.shadowImage                      = self.navigationController.navigationBar.shadowImage;
+        self.navigationBar.shadowImage                      = self.navigationController.navigationBar.shadowImage ? : [[UINavigationBar appearance] shadowImage];
         self.navigationBar.backIndicatorImage               = self.navigationController.navigationBar.backIndicatorImage;
         self.navigationBar.backIndicatorTransitionMaskImage = self.navigationController.navigationBar.backIndicatorTransitionMaskImage;
     }
